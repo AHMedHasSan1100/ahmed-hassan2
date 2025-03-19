@@ -1,5 +1,9 @@
 @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
+
 
 body {
     font-family: Arial, sans-serif ;
