@@ -1,81 +1,105 @@
+/* إعدادات الخطوط والألوان الأساسية */
 body {
-    font-family: Arial, sans-serif ;
+    font-family: Arial, sans-serif;
     background-color: #A67B5B;
     color: #515151;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
+/* الهيدر */
 header {
-    background-image:url(pr.jpg) ;
-    background-size: 100%;
+    background-image: url('pr.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: rgb(83, 48, 123);
-    padding: .4px;
+    padding: 20px;
+    text-align: center;
 }
 
+/* الأقسام */
 section {
     padding: 20px;
-    margin: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
 }
- .A{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(ALL.jpg) ;
-    background-size: cover;
- }
- .b{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(B.jpg) ;
-    background-size: cover;
- }
- .c{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(cccc.jpg);
-    background-size: cover;
- }
- .r{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(r.jpg);
-        background-size: cover;
 
- }
- .u{ 
+/* الخلفيات الخاصة */
+.A, .b, .c, .r, .u {
     color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(4-1.jpg);
+    height: 100%;
     background-size: cover;
+    background-position: center;
+}
 
- }
+.A { background-image: url('ALL.jpg'); }
+.b { background-image: url('B.jpg'); }
+.c { background-image: url('cccc.jpg'); }
+.r { background-image: url('r.jpg'); }
+.u { background-image: url('4-1.jpg'); }
+
+/* العناوين */
 h1, h2 {
     color: #6a0572;
+    font-size: 2rem;
 }
+
+/* القوائم */
 ul {
     list-style-type: none;
     padding: 0;
 }
+
 ul li {
     background: #e0e0e0;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
+
+/* الروابط */
 a {
     color: #6a0572;
     text-decoration: none;
     font-weight: bold;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+/* الفوتر */
 footer {
     background-color: #120c04;
     color: white;
     padding: 10px;
     margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* تحسين التصميم ليكون متجاوبًا مع الهواتف */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px auto;
+        max-width: 95%;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
