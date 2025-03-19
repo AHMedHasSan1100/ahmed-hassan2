@@ -4,21 +4,22 @@
     }
 }
 
-
 body {
-    font-family: Arial, sans-serif ;
+    font-family: Arial, sans-serif;
     background-color: #A67B5B;
     color: #515151;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
 header {
-    background-image:url(pr.jpg) ;
-    background-size: 100%;
+    background-image: url(pr.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: rgb(83, 48, 123);
-    padding: .4px;
+    padding: 20px;
 }
 
 section {
@@ -28,59 +29,48 @@ section {
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
- .A{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(ALL.jpg) ;
-    background-size: cover;
- }
- .b{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(B.jpg) ;
-    background-size: cover;
- }
- .c{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(cccc.jpg);
-    background-size: cover;
- }
- .r{ 
-    color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(r.jpg);
-        background-size: cover;
 
- }
- .u{ 
+.A, .b, .c, .r, .u {
     color: rgb(0, 0, 0);
-    height: 100% ;
-    background-image:url(4-1.jpg);
+    min-height: 100vh;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
- }
+.A { background-image: url(ALL.jpg); }
+.b { background-image: url(B.jpg); }
+.c { background-image: url(cccc.jpg); }
+.r { background-image: url(r.jpg); }
+.u { background-image: url(4-1.jpg); }
+
 h1, h2 {
     color: #6a0572;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
 }
+
 ul li {
     background: #e0e0e0;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
+
 a {
     color: #6a0572;
     text-decoration: none;
     font-weight: bold;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 footer {
     background-color: #120c04;
     color: white;
